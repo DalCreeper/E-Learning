@@ -1,0 +1,94 @@
+.dashboard-container {
+  margin-top: 64px;
+  padding: 24px;
+  background-color: #e0e0e0;
+  min-height: calc(100vh - 64px);
+}
+
+.courses-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.course-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white !important;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.course-card .mat-mdc-card-content {
+  padding: 20px !important;
+}
+
+.course-content {
+  display: flex !important;
+  align-items: center !important;
+  padding: 20px !important;
+  gap: 16px !important;
+}
+
+.course-icon {
+  background-color: #4caf50 !important;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.course-icon mat-icon {
+  color: white !important;
+  font-size: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-title {
+  margin: 0 0 8px 0 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #333 !important;
+}
+
+.course-description {
+  margin: 0 !important;
+  color: #666 !important;
+  font-size: 14px !important;
+}
+
+.course-arrow {
+  color: #999 !important;
+}
+
+.course-arrow mat-icon {
+  font-size: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* Ensure no courses message is visible */
+.no-courses {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px 0;
+}

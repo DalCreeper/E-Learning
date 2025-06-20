@@ -1,0 +1,19 @@
+.circular-progress {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+.circular-progress text {
+  font-size: 16px;
+  font-weight: bold;
+  fill: #fff;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  alignment-baseline: middle;
+  pointer-events: none;
+}
+
+.progress-bar {
+  transition: stroke-dashoffset 0.4s;
+}

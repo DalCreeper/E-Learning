@@ -1,0 +1,151 @@
+.sidenav-container {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.sidenav-backdrop {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.15);
+  pointer-events: all;
+  z-index: 1;
+}
+
+.sidenav {
+  width: 300px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+  height: 100%;
+  opacity: 1;
+}
+
+.sidenav-header {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.close-button {
+  color: #666;
+}
+
+.sidenav-content {
+  flex: 1;
+  padding: 16px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title {
+  margin: 0 16px 16px 16px;
+  color: #333;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.nav-title-header {
+  color: #696969;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+.nav-icon-left {
+  color: #4caf50;
+  margin-right: 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-title-text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-icon-right {
+  color: #999;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 8px;
+}
+
+.nav-list-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+}
+
+.nav-item:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-item mat-icon[matListItemIcon] {
+  color: #4caf50;
+  margin-right: 16px;
+}
+
+.nav-item mat-icon[matListItemMeta] {
+  color: #999;
+}
+
+.nav-item.disabled {
+  cursor: default;
+  pointer-events: none;
+  color: #aaa;
+  background: transparent;
+}
+.nav-item.disabled:hover {
+  background: transparent;
+}
+
+.sidenav-footer {
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  background-color: white;
+  margin-top: auto;
+}
+
+.dashboard-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #3f51b5;
+}
+
+.dashboard-button mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}

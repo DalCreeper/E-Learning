@@ -1,0 +1,50 @@
+/* Import Angular Material theme */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Debug styles */
+.debug {
+  border: 2px solid red !important;
+  background-color: yellow !important;
+}
+
+.no-courses {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Override Angular Material card styles globally */
+.mat-mdc-card {
+  --mdc-elevated-card-container-color: white !important;
+}
+
+.mat-mdc-card-content {
+  padding: 0 !important;
+}
+
+.mat-mdc-card-content:last-child {
+  padding-bottom: 0 !important;
+}
+
+.mat-mdc-card-content:first-child {
+  padding-top: 0 !important;
+}
